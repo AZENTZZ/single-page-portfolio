@@ -20,13 +20,40 @@ const abt=document.getElementById("abt")
 const home=document.getElementById("home")
 const hire=document.getElementById("hire")
 const contact=document.getElementById("contact")
+const blog=document.getElementById("blog")
 
 
+
+//blog h1 p animation
+blog.addEventListener("click",()=>{
+    document.getElementById("s3h1").setAttribute("class","s3c1");
+    document.getElementById("s3p").setAttribute("class","s3c2");
+    document.getElementById("s3p2").setAttribute("class","s3c2");
+})
+function removerFun(){
+    document.getElementById("s3h1").removeAttribute("class");
+    document.getElementById("s3p").removeAttribute("class");
+    document.getElementById("s3p2").removeAttribute("class");
+}
+//about page animation
 home.addEventListener("click",()=>{
+    secFun2();
+    removerFun();
+})
+hire.addEventListener("click",()=>{
+    secFun2()
+    removerFun();
+})
+contact.addEventListener("click",()=>{
+    secFun2()
+    removerFun();
+})
+blog.addEventListener("click",()=>{
     secFun2()
 })
 abt.addEventListener("click",()=>{
     secFun1()
+    removerFun();
 })
 function secFun1(){
     about.style.opacity="1";
@@ -81,7 +108,7 @@ document.getElementById('burger').addEventListener("click",()=>{
     }else{
         a.classList.add('toggle');
         y.style.left="190px";
-        z.style.width="249px";
+        z.style.width="250px";
         x.style.width="250px";
     }
     // x.style.width==="250px" ? x.style.width=0 : x.style.width="250px";
@@ -96,7 +123,7 @@ rec.addEventListener("click",()=>{
        cir.style.background="#7c887f";
        home.style.backgroundColor=" #202122";
        abt.style.backgroundColor=" #202122";
-       vlog.style.backgroundColor=" #202122";
+       blog.style.backgroundColor=" #202122";
        hire.style.backgroundColor=" #202122";
        contact.style.backgroundColor=" #202122";
    }else{
@@ -107,10 +134,16 @@ rec.addEventListener("click",()=>{
        cir.style.background="#202122";
        home.style.backgroundColor=" #7c887f";
         abt.style.backgroundColor=" #7c887f";
-        vlog.style.backgroundColor=" #7c887f";
+        blog.style.backgroundColor=" #7c887f";
         hire.style.backgroundColor=" #7c887f";
         contact.style.backgroundColor=" #7c887f";
    }
 });
+
+
+
+
+// #e81230;
+// rgb(110, 22, 99); }   
 
 

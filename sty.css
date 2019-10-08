@@ -297,3 +297,59 @@ left:620px;
 
 }
 /* height=667 */
+#s3p1{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#s3p1 h1{
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    color: rgb(100, 18, 177);
+   
+}
+
+.s3c1{
+    animation-name: s3p1h1;
+
+    animation-duration: 2s;
+}
+@keyframes s3p1h1{
+   0%{opacity: 0; transform: translateY(400%);}
+   /* 10%{opacity: .1; transform: translateY(360%);}
+   20%{opacity: .2; transform: translateY(320%);}
+   30%{opacity: .3; transform: translateY(280%);}
+   40%{opacity: .4; transform: translateY(240%);}
+   50%{opacity: .5; transform: translateY(200%);}
+   60%{opacity: .6; transform: translateY(160%);}
+   70%{opacity: .7; transform: translateY(120%);}
+   80%{opacity: .8; transform: translateY(80%);}
+   90%{opacity: .9; transform: translateY(40%);} */
+   50%{opacity: 1; transform: translateY(-100%);}
+   100%{opacity: 1; transform: translateY(0);}
+
+}
+#s3p1 p{
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Lobster Two', cursive;
+    color: beige;
+    margin-bottom: 20px;
+}
+.s3c2{
+    animation-name: s3p1p;
+
+    animation-duration: 2s;
+}
+@keyframes s3p1p{
+    0%{opacity: .5; transform:translateY(30%);}
+    100%{opacity: 1; transform:translateY(0%);}
+}
+
+
+#s4p1 h1{
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    color: rgb(100, 18, 177);
+
+}
+
